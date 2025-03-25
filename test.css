@@ -482,3 +482,131 @@ body {
   color: var(--color-text);
   display: block;
 }
+
+/* Additional styles for press and talks page */
+.section-intro {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.featured-media {
+  display: block;
+  height: 250px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  position: relative;
+  border-radius: var(--border-radius);
+}
+
+.featured-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.featured-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.awards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.award-item {
+  background-color: var(--color-background);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.award-item:hover {
+  transform: translateY(-3px);
+}
+
+.award-link {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.award-image {
+  width: 250px;
+  height: auto;
+  margin-right: 1.5rem;
+}
+
+.award-info {
+  flex: 1;
+}
+
+.award-info h4 {
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.award-info p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+}
+
+.press-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.press-item {
+  display: flex;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  background-color: var(--color-background);
+  transition: transform 0.3s ease;
+}
+
+.press-item:hover {
+  transform: translateY(-3px);
+}
+
+.press-date {
+  min-width: 80px;
+  font-weight: 500;
+  color: var(--color-text-light);
+}
+
+.press-content {
+  flex: 1;
+}
+
+.press-content h4 {
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.press-content p {
+  font-size: 0.9rem;
+  color: var(--color-text-light);
+  line-height: 1.4;
+}
+
+@media (min-width: 640px) {
+  .press-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .awards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .press-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
