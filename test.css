@@ -469,3 +469,16 @@ body {
 .news-section {
   animation-delay: 0.2s;
 }
+
+.talk-venue {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-top: 0.25rem;
+  padding: 0 1rem 1rem;
+}
+
+.featured-item a {
+  text-decoration: none;
+  color: var(--color-text);
+  display: block;
+}
