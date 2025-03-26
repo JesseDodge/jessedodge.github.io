@@ -7,21 +7,15 @@
       "url": "https://www.ktvu.com/video/1391187"
     },
     {
-      "title": "AI2 Researchers Win Test of Time Award",
-      "date": "2022-05-01",
-      "image": "./interview_screenshots/10-year_test_of_time.png",
-      "url": "https://www.geekwire.com/2022/ai2-researchers-win-test-of-time-award-that-honors-long-lasting-influence-for-ai-related-papers/"
-    },
-    {
       "title": "IDM Symposium 2023 - Day 1 - Applied Perspectives on AI and Large Language Models",
       "date": "2024-03-25",
-      "image": "public/images/e1.jpeg",
+      "image": "interview_screenshots/idm_symposium.png",
       "url": "https://example.com/talk3"
     },
     {
-      "title": "Reproducibility in Machine Learning",
+      "title": "Green AI- Efficiency in NLP",
       "date": "2024-12-05",
-      "image": "public/images/e4.jpeg",
+      "image": "interview_screenshots/lti_coll.png",
       "url": "https://example.com/talk4"
     }
   ]

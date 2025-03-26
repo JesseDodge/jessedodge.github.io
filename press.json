@@ -1,0 +1,49 @@
+{
+  "pressItems": [
+    {
+      "title": "How analog AI hardware may one day reduce costs and carbon emissions",
+      "image": "press_screenshots/d1.jpg",
+      "url": "https://example.com/article1"
+    },
+    {
+      "title": "Google Brain alum to helm new nonprofit AI research lab",
+      "image": "press_screenshots/d1.jpg",
+      "url": "https://example.com/article2"
+    },
+    {
+      "title": "Bounty for AI will help to catch problems faster",
+      "image": "press_screenshots/d1.jpg",
+      "url": "https://example.com/article3"
+    },
+    {
+      "title": "Using polyglot datasets to help fill massive language gap in field",
+      "image": "press_screenshots/d2.jpg",
+      "url": "https://example.com/article4"
+    },
+    {
+      "title": "Why DeepMind thinks it can make chatbots more factual",
+      "image": "press_screenshots/d3.jpg",
+      "url": "https://example.com/article5"
+    },
+    {
+      "title": "Should AI Be Scaled Down?",
+      "image": "press_screenshots/d4.jpg",
+      "url": "https://example.com/article6"
+    },
+    {
+      "title": "Platform to track and filter audited AI datasets",
+      "image": "press_screenshots/d5.jpg",
+      "url": "https://example.com/article7"
+    },
+    {
+      "title": "AI's language gap",
+      "image": "press_screenshots/d6.jpg",
+      "url": "https://example.com/article8"
+    },
+    {
+      "title": "AI researchers uncover ethical, legal risks to using popular data sets",
+      "image": "press_screenshots/d7.jpg",
+      "url": "https://example.com/article9"
+    }
+  ]
+}
