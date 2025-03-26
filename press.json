@@ -1,49 +1,34 @@
 {
   "pressItems": [
     {
-      "title": "How analog AI hardware may one day reduce costs and carbon emissions",
-      "image": "press_screenshots/d1.jpg",
-      "url": "https://example.com/article1"
+      "title": "NPR's Morning Edition: Artificial intelligence's thirst for electricity",
+      "image": "press_screenshots/npr2.png",
+      "url": "https://www.npr.org/2024/07/10/nx-s1-5028558/artificial-intelligences-thirst-for-electricity"
     },
     {
-      "title": "Google Brain alum to helm new nonprofit AI research lab",
-      "image": "press_screenshots/d1.jpg",
-      "url": "https://example.com/article2"
+      "title": "POLITICO Tech: How much energy does AI use? A lot, actually",
+      "image": "press_screenshots/politico1.png",
+      "url": "https://politico-energy.simplecast.com/episodes/how-much-energy-does-generative-ai-use-YM5aHbUo"
     },
     {
-      "title": "Bounty for AI will help to catch problems faster",
-      "image": "press_screenshots/d1.jpg",
-      "url": "https://example.com/article3"
+      "title": "San Francisco Examiner: Into thin air: How AI's water use could alter watersheds",
+      "image": "press_screenshots/sfe2.png",
+      "url": "https://www.sfexaminer.com/news/technology/how-growth-of-ai-could-stress-san-francisco-water-supplies/article_3a37584a-08d4-11ef-a0d1-6bb1d94583ae.html"
     },
     {
-      "title": "Using polyglot datasets to help fill massive language gap in field",
-      "image": "press_screenshots/d2.jpg",
-      "url": "https://example.com/article4"
+      "title": "The Week: The complex environmental toll of artificial intelligence",
+      "image": "press_screenshots/week2.png",
+      "url": "https://theweek.com/tech/AI-climate-effects"
     },
     {
-      "title": "Why DeepMind thinks it can make chatbots more factual",
-      "image": "press_screenshots/d3.jpg",
-      "url": "https://example.com/article5"
+      "title": "TechCrunch: Why most AI benchmarks tell us so little",
+      "image": "press_screenshots/tc1.png",
+      "url": "https://techcrunch.com/2024/03/07/heres-why-most-ai-benchmarks-tell-us-so-little/"
     },
     {
-      "title": "Should AI Be Scaled Down?",
-      "image": "press_screenshots/d4.jpg",
-      "url": "https://example.com/article6"
-    },
-    {
-      "title": "Platform to track and filter audited AI datasets",
-      "image": "press_screenshots/d5.jpg",
-      "url": "https://example.com/article7"
-    },
-    {
-      "title": "AI's language gap",
-      "image": "press_screenshots/d6.jpg",
-      "url": "https://example.com/article8"
-    },
-    {
-      "title": "AI researchers uncover ethical, legal risks to using popular data sets",
-      "image": "press_screenshots/d7.jpg",
-      "url": "https://example.com/article9"
+      "title": "Analytics India Magazine: This Bengaluru-based AI Startup is Helping Reduce Carbon Footprint",
+      "image": "press_screenshots/aim1.png",
+      "url": "https://analyticsindiamag.com/deep-tech/how-this-bengaluru-based-ai-startup-is-helping-reduce-carbon-footprint/"
     }
   ]
 }
