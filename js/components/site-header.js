@@ -36,6 +36,14 @@ class SiteHeader extends HTMLElement {
   </div>
 </header>
       `;
+      const menuCheckbox = this.querySelector('#menuToggle input');
+      menuCheckbox.addEventListener('change', () => {
+        if (menuCheckbox.checked) {
+          document.documentElement.style.overflow = 'hidden'; // Disable scrolling
+        } else {
+          document.documentElement.style.overflow = ''; // Enable scrolling
+        }
+      });
   }
 }
 
