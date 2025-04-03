@@ -3,6 +3,7 @@
   --color-background: #f5f3f4;
   --color-accent: #adb5bd;
   --color-accent-dark: #6c757d;
+  --color-link: #0466c8;
   --color-text: #3a3a3a;
   --color-text-light: #686868;
   --color-white: #ffffff;
@@ -31,6 +32,11 @@ body {
   width: 100%;
   padding: 1.5rem 1.5rem;
   max-width: 100%;
+}
+
+.welcome a{
+  color: var(--color-link);
+  text-decoration: none;
 }
 
 /* Sticky Header styles */
@@ -542,6 +548,71 @@ body {
   animation-delay: 0.2s;
 }
 
+/* Awards List Styling */
+.pl {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.pl li {
+  margin-bottom: 1.5rem;
+  padding: 1.2rem;
+  background-color: var(--color-background);
+  border-radius: 6px;
+  border-left: 4px solid var(--color-accent);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+}
+
+.pl li:last-child {
+  margin-bottom: 0;
+}
+
+.pl li:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-sm);
+}
+
+.awards-section .pl li a,
+.welcome a {
+  position: relative;
+  color: var(--color-link);
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.05rem;
+  transition: color 0.2s;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* .pl li a:hover {
+  color: var(--color-accent);
+} */
+/* Create the underline effect with pseudo-element */
+.awards-section .pl li a:after,
+.welcome a::after  {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+/* Make the underline expand on hover */
+.awards-section .pl li a:hover::after,
+.welcome a:hover::after {
+  width: 100%;
+}
+.pl li br {
+  margin-bottom: 0.5rem;
+  content: '';
+  display: block;
+}
+
 .talk-venue {
   font-size: 0.85rem;
   color: var(--color-text-light);
@@ -595,7 +666,7 @@ body {
 }
 
 .award-link {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   padding: 1rem;
   text-decoration: none;
@@ -608,8 +679,15 @@ body {
   margin-right: 1.5rem;
 }
 
+@media (max-width: 767px) {
+  /* .award-item .award-info {
+        opacity: 1;
+        transform: translateY(0);
+    } */
+}
+
 .award-info {
-  flex: 1;
+  /* flex: 1; */
 }
 
 .award-info h4 {
@@ -628,7 +706,7 @@ body {
   gap: 1rem;
 }
 
-.press-item {
+.press-list .press-item {
   display: flex;
   padding: 1rem;
   border-radius: var(--border-radius);
@@ -636,7 +714,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.press-item:hover {
+.press-list .press-item:hover {
   transform: translateY(-3px);
 }
 
@@ -704,9 +782,10 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: contain;
   background-position: center;
   transition: transform 0.3s ease;
+  background-repeat: no-repeat;
 }
 
 .press-grid .press-item h4 {
