@@ -34,7 +34,7 @@ body {
   max-width: 100%;
 }
 
-.welcome a{
+.welcome a {
   color: var(--color-link);
   text-decoration: none;
 }
@@ -351,7 +351,7 @@ body {
 }
 
 /* Only hide and show on hover for desktop */
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .featured-item h4 {
     opacity: 0;
     transform: translateY(100%);
@@ -481,13 +481,6 @@ body {
   }
 }
 
-/* Larger tablet view - 3 columns */
-@media (min-width: 768px) {
-  .featured-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 /* Desktop breakpoint */
 @media (min-width: 1024px) {
   .container {
@@ -583,6 +576,9 @@ body {
   font-size: 1.05rem;
   transition: color 0.2s;
   display: inline-block;
+}
+
+.awards-section .pl li a {
   margin-bottom: 0.5rem;
 }
 
@@ -591,7 +587,7 @@ body {
 } */
 /* Create the underline effect with pseudo-element */
 .awards-section .pl li a:after,
-.welcome a::after  {
+.welcome a::after {
   content: '';
   position: absolute;
   width: 0%;
@@ -806,10 +802,24 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+  .press-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Tablet and desktop views */
 @media (min-width: 768px) {
+  .press-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop view: 3 columns */
+@media (min-width: 1025px) {
+  .press-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .press-grid .press-item h4 {
     opacity: 0;
     transform: translateY(100%);
@@ -822,16 +832,5 @@ body {
 
   .press-grid .press-item:hover .press-image {
     transform: scale(1.05);
-  }
-
-  .press-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-/* Desktop view: 3 columns */
-@media (min-width: 1024px) {
-  .press-grid {
-    grid-template-columns: repeat(3, 1fr);
   }
 }
