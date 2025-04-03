@@ -17,6 +17,12 @@
       "date": "2024-12-05",
       "image": "interview_screenshots/lti_coll.png",
       "url": "https://www.youtube.com/watch?v=ZFqm7NnRAe0"
+    },
+    {
+      "title": "How Should a Machine Learning Researcher Think About AI Ethics?",
+      "date": "2021-12-10",
+      "image": "interview_screenshots/reliabilityInterview.png",
+      "url": "https://neurips.cc/virtual/2021/panel/44887"
     }
   ]
 }

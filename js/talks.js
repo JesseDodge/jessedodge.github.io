@@ -48,7 +48,8 @@ document.addEventListener('DOMContentLoaded', function () {
       const sortedTalks = processedTalks.sort((a, b) => b.dateObj - a.dateObj);
 
       // Get the 3 most recent talks
-      const recentTalks = sortedTalks.slice(0, 3);
+      const recentTalks = sortedTalks.slice(0, 4);
+      console.log('recent talks', recentTalks)
 
       // Get the featured-grid element
       const featuredGrid = document.querySelector('.featured-grid');
