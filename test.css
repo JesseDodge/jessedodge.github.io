@@ -542,6 +542,27 @@ body {
 }
 
 /* Awards List Styling */
+
+/* Awards section two-column layout for desktop */
+@media (min-width: 1024px) {
+  /* Convert the awards list to a grid layout on desktop */
+  .awards-section .pl {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  
+  /* Reset the bottom margin since grid gap handles spacing */
+  .awards-section .pl li {
+    margin-bottom: 0;
+  }
+  
+  /* Adjust hover animation for grid layout */
+  .awards-section .pl li:hover {
+    transform: translateY(-5px);
+  }
+}
+
 .pl {
   list-style: none;
   padding: 0;
@@ -662,7 +683,7 @@ body {
 }
 
 .award-link {
-  /* display: flex; */
+  display: flex;
   align-items: center;
   padding: 1rem;
   text-decoration: none;
@@ -683,12 +704,13 @@ body {
 }
 
 .award-info {
-  /* flex: 1; */
+  flex: 1;
 }
 
 .award-info h4 {
   margin-bottom: 0.5rem;
   font-weight: 600;
+  color: var(--color-link);
 }
 
 .award-info p {
