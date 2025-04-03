@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   // Fetch the talks data
-  fetch('talks.json')
+  fetch('./public/json/featured-talks.json')
     .then((response) => {
       if (!response.ok) {
         throw new Error('Network response was not ok');

@@ -1,0 +1,64 @@
+/* Pagination styles */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.pagination-btn {
+  min-width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-background);
+  border: none;
+  border-radius: var(--border-radius);
+  color: var(--color-text);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  padding: 0 0.75rem;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.pagination-btn.active {
+  background-color: var(--color-accent-dark);
+  color: var(--color-white);
+}
+
+.pagination-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.pagination-ellipsis {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  color: var(--color-text-light);
+}
+
+/* Press title link styles */
+.press-title-link {
+    display: block;
+  color: var(--color-link);
+}
+
+body.press-talks .press-list .press-item {
+  display: flex;
+  padding: 1rem;
+  border-radius: var(--border-radius);
+  background-color: var(--color-background);
+  transition: transform 0.3s ease;
+  flex-direction: column;
+}

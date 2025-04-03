@@ -2,7 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   // Fetch the press data
-  fetch('press.json')
+  fetch('./public/json/featured-press.json')
     .then((response) => {
       if (!response.ok) {
         throw new Error('Network response was not ok');

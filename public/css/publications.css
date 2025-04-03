@@ -1,3 +1,7 @@
 body.publications .container {
   background-color: var(--color-white);
 }
+
+body.publications .pl h4 {
+  font-size: 25px;
+}

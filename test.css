@@ -710,7 +710,7 @@ body {
   transition: transform 0.3s ease;
 }
 
-.press-list .press-item:hover {
+body.home .press-list .press-item:hover {
   transform: translateY(-3px);
 }
 
