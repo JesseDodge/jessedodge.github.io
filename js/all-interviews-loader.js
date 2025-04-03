@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Configuration
   const ITEMS_PER_PAGE = 3;
   let currentPage = 1;
-  const DEFAULT_IMAGE_PATH = '/public/images/defaultImage.png';
+  const DEFAULT_IMAGE_PATH = './public/images/defaultImage.png';
 
   // Get the interview grid container
   const interviewGrid = document.getElementById('interview-grid');
