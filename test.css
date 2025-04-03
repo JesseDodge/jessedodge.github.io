@@ -551,12 +551,12 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
-  
+
   /* Reset the bottom margin since grid gap handles spacing */
   .awards-section .pl li {
     margin-bottom: 0;
   }
-  
+
   /* Adjust hover animation for grid layout */
   .awards-section .pl li:hover {
     transform: translateY(-5px);
@@ -823,6 +823,14 @@ body.home .press-list .press-item:hover {
   .press-grid .press-item h4 {
     opacity: 1;
     transform: translateY(0);
+    height: 100%; /* Fixed height for all h4 elements */
+    overflow: hidden;
+    display: -webkit-box;
+    line-clamp: 4;
+    -webkit-line-clamp: 4; /* Limit to 4 lines */
+    -webkit-box-orient: vertical;
+    font-size: 0.9rem;
+    line-height: 1.3;
   }
   .press-grid {
     grid-template-columns: repeat(2, 1fr);
