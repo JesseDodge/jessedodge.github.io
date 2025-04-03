@@ -62,3 +62,90 @@ body.press-talks .press-list .press-item {
   transition: transform 0.3s ease;
   flex-direction: column;
 }
+
+/* Interview section styling */
+.interview-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.interview-item {
+  display: flex;
+  background-color: var(--color-background);
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.interview-item:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+}
+
+.talk-venue {
+  font-size: 0.85rem;
+  color: var(--color-text-light);
+  margin-bottom: 0.75rem;
+}
+
+.interview-text {
+  flex: 0 0 75%;
+  padding: 1.5rem;
+}
+
+.interview-text h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+}
+
+.interview-text p {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--color-text-light);
+}
+
+.interview-media {
+  flex: 0 0 25%;
+  background-color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.interview-image, .interview-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Mobile responsive adjustments */
+@media (max-width: 767px) {
+  .interview-item {
+    flex-direction: column;
+  }
+  
+  .interview-text, .interview-media {
+    flex: 0 0 100%;
+  }
+  
+  .interview-media {
+    height: 200px;
+    order: -1; /* Show media on top for mobile */
+  }
+}
+
+/* Spacing for interview pagination */
+#interview-pagination {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Ensure consistent height for featured grid to prevent layout shifts */
+.interview-grid {
+  min-height: 300px; /* Adjust based on your item height */
+}
