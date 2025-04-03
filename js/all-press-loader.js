@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
     paginationContainer.appendChild(prevBtn);
 
     // Determine which page buttons to show
-    const maxVisibleButtons = 3;
+    const maxVisibleButtons = 2;
     let startPage = 1;
     let endPage = totalPages;
 
