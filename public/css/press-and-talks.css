@@ -10,6 +10,11 @@ body.press-talks .awards-grid .award-link {
   padding: 0;
 }
 
+body.press-talks section.intro a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
 body.press-talks .interviews-talks a,body.press-talks .awards-recognition a {
   position: relative;
   color: var(--color-link);
@@ -30,7 +35,7 @@ body.press-talks .section a::after {
 }
 
 /* Make the underline expand on hover */
-body.press-talks a:hover::after {
+body.press-talks section.interviews-talks a:hover::after,body.press-talks section.awards-recognition a:hover::after {
   width: 100%;
 }
 /* Pagination styles */

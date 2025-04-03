@@ -33,7 +33,7 @@ const allInterviewData = [
     description: 'Invited panelist, hosted by Senators Markey and Heinrich',
     mediaType: 'image',
     mediaSource: './public/images/dc.jpeg',
-    url: 'https://datascience.stanford.edu/cores/cores-annual-symposium-2024',
+    url: 'https://allenai.org/blog/ai-climate-a-first-of-its-kind-conversation-on-the-hill-10baea2a0d13',
   },
   {
     title: 'Bill & Melinda Gates Foundation IDM Symposium',
@@ -116,7 +116,56 @@ const allInterviewData = [
   },
   {
     title: 'Learning Workshop 2022',
-    venue: 'March 3 2022',
+    venue: 'March 4 2022',
     description: 'Invited Talk: Data-first Machine Learning',
+  },
+  {
+    title: 'TVMCon 2021',
+    venue: 'December 17 2021',
+    description: 'Invited Talk: Green AI',
+  },
+  {
+    title: 'NeurIPS Plenary Panel, NeurIPS 2021',
+    venue: 'NeurIPS November 16 2021',
+    description: 'Invited Talk: Green AI',
+    mediaType: 'image',
+    mediaSource: './interview_screenshots/reliabilityInterview.png',
+    url: 'https://neurips.cc/virtual/2021/panel/44887',
+  },
+  {
+    title: 'Workshop on Enormous Language Models',
+    venue: 'ICLR, May 7 2021',
+    description:
+      'Invited Talk: Is Brevity the Soul of Wit? What Information to Report About Our Data',
+    mediaType: 'video',
+    mediaSource:
+      'https://www.youtube.com/embed/x-9KxACAPIo?si=qLt1gwkITXgFuRaG&amp;start=6864',
+    mediaTitle: 'YouTube video player',
+    url: 'https://welmworkshop.github.io/#speakers',
+  },
+  {
+    title: 'Negative Results Workshop',
+    venue: 'EMNLP, December 15 2020',
+    description: 'Invited Panelist: Leaderboardism in NLP',
+    mediaType: 'video',
+    mediaSource:
+      'https://www.youtube.com/embed/VauPmCJSlH8?si=jzQURjBahFxT-1kb',
+    mediaTitle: 'YouTube video player',
+    url: 'https://insights-workshop.github.io/2020/program/',
+  },
+  {
+    title: 'Allen Institute for Artificial Intelligence',
+    venue: 'Allen Institute for AI, April 18 2018',
+    description: 'Invited Panelist: Leaderboardism in NLP',
+    mediaType: 'video',
+    mediaSource:
+      'https://www.youtube.com/embed/el_DbbqXuQY?si=CnxR1Z-RMQwUlyck',
+    mediaTitle: 'YouTube video player',
+  },
+  {
+    title: 'NLP Seminar',
+    venue: 'Cambridge University, July 18 2014',
+    description:
+      'Invited Talk: Context-dependent Semantic Parsing for Time Expressions',
   },
 ];
