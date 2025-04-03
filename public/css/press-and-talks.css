@@ -194,3 +194,28 @@ body.press-talks .press-list .press-item {
 .interview-grid {
   min-height: 300px; /* Adjust based on your item height */
 }
+
+/* Mobile-friendly pagination */
+@media (max-width: 767px) {
+  .pagination {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .pagination-btn {
+    margin: 2px;
+    min-width: 32px;
+  }
+  
+  /* Make h4 elements in press items have consistent height on mobile */
+  .press-grid .press-item h4,
+  .press-list .press-item h4 {
+    height: 60px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 8px;
+  }
+}
