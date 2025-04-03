@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
   // Configuration
   const ITEMS_PER_PAGE = 3;
   let currentPage = 1;
+  const DEFAULT_IMAGE_PATH = '/public/images/defaultImage.png';
 
   // Get the interview grid container
   const interviewGrid = document.getElementById('interview-grid');
@@ -40,7 +41,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Create title
       const title = document.createElement('h4');
-      title.textContent = item.title;
+      if (item.url) {
+        // Create clickable link that opens in new tab
+        const titleLink = document.createElement('a');
+        titleLink.href = item.url;
+        titleLink.textContent = item.title;
+        titleLink.target = '_blank'; // Open in new tab
+        titleLink.rel = 'noopener noreferrer'; // Security best practice
+        title.appendChild(titleLink);
+      } else {
+        // No URL, just display as text
+        title.textContent = item.title;
+      }
 
       // Create description
       const description = document.createElement('p');
@@ -56,13 +68,13 @@ document.addEventListener('DOMContentLoaded', function () {
       mediaContainer.className = 'interview-media';
 
       // Add appropriate media
-      if (item.mediaType === 'image') {
+      if (item.mediaType === 'image' && item.mediaSource) {
         const image = document.createElement('img');
         image.className = 'interview-image';
         image.src = item.mediaSource;
         image.alt = item.mediaAlt || item.title;
         mediaContainer.appendChild(image);
-      } else if (item.mediaType === 'video') {
+      } else if (item.mediaType === 'video' && item.mediaSource) {
         const iframe = document.createElement('iframe');
         iframe.className = 'interview-video';
         iframe.src = item.mediaSource;
@@ -72,6 +84,13 @@ document.addEventListener('DOMContentLoaded', function () {
           'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
         iframe.allowFullscreen = true;
         mediaContainer.appendChild(iframe);
+      } else {
+        // Default image when no valid media type or source is specified
+        const defaultImage = document.createElement('img');
+        defaultImage.className = 'interview-image';
+        defaultImage.src = DEFAULT_IMAGE_PATH;
+        defaultImage.alt = 'Interview with ' + item.title;
+        mediaContainer.appendChild(defaultImage);
       }
 
       // Assemble the interview item

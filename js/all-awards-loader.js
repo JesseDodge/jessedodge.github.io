@@ -38,7 +38,19 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Create award title
       const awardTitle = document.createElement('h4');
-      awardTitle.textContent = item.title;
+      if (item.url) {
+        // Create clickable link that opens in new tab
+        const awardLink = document.createElement('a');
+        awardLink.href = item.url;
+        awardLink.textContent = item.title;
+        awardLink.className = 'award-link';
+        awardLink.target = '_blank'; // Open in new tab
+        awardLink.rel = 'noopener noreferrer'; // Security best practice
+        awardTitle.appendChild(awardLink);
+      } else {
+        // No URL, just display as text
+        awardTitle.textContent = item.title;
+      }
 
       // Create award description
       const awardDesc = document.createElement('p');
@@ -47,8 +59,8 @@ document.addEventListener('DOMContentLoaded', function () {
       // Build the award item structure
       awardInfo.appendChild(awardTitle);
       awardInfo.appendChild(awardDesc);
-      awardLink.appendChild(awardInfo);
-      awardItem.appendChild(awardLink);
+      awardItem.appendChild(awardInfo);
+  
 
       // Add to container
       awardsGridContainer.appendChild(awardItem);

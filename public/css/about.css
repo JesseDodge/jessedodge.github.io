@@ -2,3 +2,87 @@ body.about .section a {
     color:var(--color-link);
     text-decoration: none;
 }
+body.about .main-content {
+  margin-bottom: 20px;
+}
+/* Service Section List Styling */
+.service h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.5rem 0 0.75rem;
+  color: var(--color-text);
+}
+
+.service h3:first-of-type {
+  margin-top: 0;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+
+.service-list li {
+  margin-bottom: 0.75rem;
+  padding: 1rem 1.2rem;
+  background-color: var(--color-background);
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--color-accent);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-list li:hover {
+  transform: translateX(5px);
+  box-shadow: var(--shadow-sm);
+}
+
+.service-list li:last-child {
+  margin-bottom: 0;
+}
+
+.service-list li strong {
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.service-list a {
+  color: var(--color-link);
+  text-decoration: none;
+  position: relative;
+  font-weight: 600;
+}
+
+.service-list a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: var(--color-accent);
+  transition: width 0.3s ease;
+}
+
+.service-list a:hover:after {
+  width: 100%;
+}
+
+/* Program committee and leadership timeline specific styling */
+.service-list.timeline li strong {
+  display: inline-block;
+  min-width: 50px;
+}
+
+/* Desktop view optimization */
+@media (min-width: 768px) {
+  .service-list:not(.timeline) {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.75rem;
+  }
+  
+  .service-list:not(.timeline) li {
+    margin-bottom: 0;
+  }
+}
