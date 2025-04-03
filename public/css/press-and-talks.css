@@ -110,7 +110,7 @@ body.press-talks .press-list .press-item {
 
 .interview-media {
   flex: 0 0 25%;
-  background-color: var(--color-accent);
+  background-color: var(--color-background);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -120,7 +120,8 @@ body.press-talks .press-list .press-item {
 .interview-image, .interview-video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  background-repeat: no-repeat;
 }
 
 /* Mobile responsive adjustments */
