@@ -1,7 +1,12 @@
-body.publications .container {
-  background-color: var(--color-white);
-}
-
 body.publications .pl h4 {
   font-size: 25px;
+}
+
+body.publications .section-intro,
+body.publications .section {
+  margin-bottom: 0;
+}
+
+body.publications .section a {
+  color: var(--color-link);
 }
