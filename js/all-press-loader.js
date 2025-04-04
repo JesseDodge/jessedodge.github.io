@@ -1,9 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
-  // Configuration
   const ITEMS_PER_PAGE = 9;
   let currentPage = 1;
-
-  // DOM elements
   const pressListContainer = document.getElementById('press-list');
   const paginationContainer = document.getElementById('press-pagination');
 

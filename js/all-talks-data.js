@@ -1,7 +1,7 @@
-const allInterviewData = [
+const allTalksData = [
   {
     title: 'Machine Learning Reproducibility Challenge at Princeton University',
-    venue: 'Princeton University, August 21 2024',
+    venue: 'Princeton University, August 21 2025',
     description: 'Keynote speaker: Reproducibility in the Science of AI',
     mediaType: 'image',
     mediaSource: './public/images/princeton_banner.jpg',

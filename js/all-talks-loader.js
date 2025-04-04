@@ -4,35 +4,35 @@ document.addEventListener('DOMContentLoaded', function () {
   let currentPage = 1;
   const DEFAULT_IMAGE_PATH = './public/images/defaultImage.png';
 
-  // Get the interview grid container
-  const interviewGrid = document.getElementById('interview-grid');
-  if (!interviewGrid) return;
+  // Get the talk grid container
+  const talkGrid = document.getElementById('talk-grid');
+  if (!talkGrid) return;
 
   // Calculate pages
-  const totalItems = allInterviewData.length;
+  const totalItems = allTalksData.length;
   const totalPages = Math.ceil(totalItems / ITEMS_PER_PAGE);
 
-  // Function to render a specific page of interview items
+  // Function to render a specific page of talk items
   function renderPage(page) {
     // Clear the current content
-    interviewGrid.innerHTML = '';
+    talkGrid.innerHTML = '';
 
     // Calculate start and end indices for the current page
     const startIndex = (page - 1) * ITEMS_PER_PAGE;
     const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, totalItems);
 
     // Get the current page items
-    const currentItems = allInterviewData.slice(startIndex, endIndex);
+    const currentItems = allTalksData.slice(startIndex, endIndex);
 
-    // Create and append elements for each interview
+    // Create and append elements for each talk
     currentItems.forEach((item) => {
-      // Create interview container
-      const interviewItem = document.createElement('div');
-      interviewItem.className = 'interview-item';
+      // Create talk container
+      const talkItem = document.createElement('div');
+      talkItem.className = 'talk-item';
 
       // Create text content area
       const textContent = document.createElement('div');
-      textContent.className = 'interview-text';
+      textContent.className = 'talk-text';
 
       // Create venue paragraph
       const venue = document.createElement('p');
@@ -65,18 +65,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
       // Create media container
       const mediaContainer = document.createElement('div');
-      mediaContainer.className = 'interview-media';
+      mediaContainer.className = 'talk-media';
 
       // Add appropriate media
       if (item.mediaType === 'image' && item.mediaSource) {
         const image = document.createElement('img');
-        image.className = 'interview-image';
+        image.className = 'talk-image';
         image.src = item.mediaSource;
         image.alt = item.mediaAlt || item.title;
         mediaContainer.appendChild(image);
       } else if (item.mediaType === 'video' && item.mediaSource) {
         const iframe = document.createElement('iframe');
-        iframe.className = 'interview-video';
+        iframe.className = 'talk-video';
         iframe.src = item.mediaSource;
         iframe.title = item.mediaTitle || item.title;
         iframe.frameBorder = '0';
@@ -87,24 +87,24 @@ document.addEventListener('DOMContentLoaded', function () {
       } else {
         // Default image when no valid media type or source is specified
         const defaultImage = document.createElement('img');
-        defaultImage.className = 'interview-image';
+        defaultImage.className = 'talk-image';
         defaultImage.src = DEFAULT_IMAGE_PATH;
-        defaultImage.alt = 'Interview with ' + item.title;
+        defaultImage.alt = 'talk with ' + item.title;
         mediaContainer.appendChild(defaultImage);
       }
 
-      // Assemble the interview item
-      interviewItem.appendChild(textContent);
-      interviewItem.appendChild(mediaContainer);
+      // Assemble the talk item
+      talkItem.appendChild(textContent);
+      talkItem.appendChild(mediaContainer);
 
       // Add to container
-      interviewGrid.appendChild(interviewItem);
+      talkGrid.appendChild(talkItem);
     });
   }
 
   // Function to create pagination controls
   function createPagination() {
-    const paginationContainer = document.getElementById('interview-pagination');
+    const paginationContainer = document.getElementById('talk-pagination');
     if (!paginationContainer) return;
 
     // Clear existing pagination

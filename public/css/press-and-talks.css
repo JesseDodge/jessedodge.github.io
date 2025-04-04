@@ -15,7 +15,7 @@ body.press-talks section.intro a {
   text-decoration: none;
 }
 
-body.press-talks .interviews-talks a,body.press-talks .awards-recognition a {
+body.press-talks .invited-talks a,body.press-talks .awards-recognition a {
   position: relative;
   color: var(--color-link);
   text-decoration: none;
@@ -35,7 +35,7 @@ body.press-talks .section a::after {
 }
 
 /* Make the underline expand on hover */
-body.press-talks section.interviews-talks a:hover::after,body.press-talks section.awards-recognition a:hover::after {
+body.press-talks section.invited-talks a:hover::after,body.press-talks section.awards-recognition a:hover::after {
   width: 100%;
 }
 /* Pagination styles */
@@ -96,6 +96,10 @@ body.press-talks section.interviews-talks a:hover::after,body.press-talks sectio
   margin-bottom: 5px;
 }
 
+.press-coverage .press-title-link:hover {
+  text-decoration: underline;
+}
+
 body.press-talks .press-list .press-item {
   display: flex;
   padding: 1rem;
@@ -105,14 +109,14 @@ body.press-talks .press-list .press-item {
   flex-direction: column;
 }
 
-/* Interview section styling */
-.interview-grid {
+/* talks section styling */
+.talk-grid {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.interview-item {
+.talk-item {
   display: flex;
   background-color: var(--color-background);
   border-radius: var(--border-radius);
@@ -120,10 +124,10 @@ body.press-talks .press-list .press-item {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.interview-item:hover {
+/* .talks-item:hover {
   transform: translateY(-3px);
   box-shadow: var(--shadow-md);
-}
+} */
 
 .talk-venue {
   font-size: 0.85rem;
@@ -131,26 +135,26 @@ body.press-talks .press-list .press-item {
   margin-bottom: 0.75rem;
 }
 
-.interview-text {
+.talk-text {
   flex: 0 0 75%;
   padding: 1.5rem;
 }
 
-.interview-text h4 {
+.talk-text h4 {
   font-size: 1.2rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: var(--color-text);
 }
 
-.interview-text p {
+.talk-text p {
   margin-top: 0.75rem;
   font-size: 0.95rem;
   line-height: 1.5;
   color: var(--color-text-light);
 }
 
-.interview-media {
+.talk-media {
   flex: 0 0 25%;
   background-color: var(--color-background);
   display: flex;
@@ -159,8 +163,8 @@ body.press-talks .press-list .press-item {
   overflow: hidden;
 }
 
-.interview-image,
-.interview-video {
+.talk-image,
+.talk-video {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -169,29 +173,29 @@ body.press-talks .press-list .press-item {
 
 /* Mobile responsive adjustments */
 @media (max-width: 767px) {
-  .interview-item {
+  .talk-item {
     flex-direction: column;
   }
 
-  .interview-text,
-  .interview-media {
+  .talk-text,
+  .talk-media {
     flex: 0 0 100%;
   }
 
-  .interview-media {
+  .talk-media {
     height: 200px;
     order: -1; /* Show media on top for mobile */
   }
 }
 
-/* Spacing for interview pagination */
-#interview-pagination {
+/* Spacing for talks pagination */
+#talk-pagination {
   margin-top: 1.5rem;
   margin-bottom: 2rem;
 }
 
 /* Ensure consistent height for featured grid to prevent layout shifts */
-.interview-grid {
+.talk-grid {
   min-height: 300px; /* Adjust based on your item height */
 }
 
