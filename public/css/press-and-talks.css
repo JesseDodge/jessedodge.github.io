@@ -12,18 +12,18 @@ body.press-talks .awards-grid .award-link {
 
 body.press-talks section.intro a {
   color: var(--color-link);
-  text-decoration: none;
+  /* text-decoration: none; */
 }
 
 body.press-talks .invited-talks a,body.press-talks .awards-recognition a {
   position: relative;
   color: var(--color-link);
-  text-decoration: none;
+  /* text-decoration: none; */
   transition: color 0.2s;
   display: inline-block;
 }
 
-body.press-talks .section a::after {
+/* body.press-talks .section a::after {
   content: '';
   position: absolute;
   width: 0%;
@@ -32,12 +32,12 @@ body.press-talks .section a::after {
   left: 0;
   background-color: var(--color-accent);
   transition: width 0.3s ease;
-}
+} */
 
 /* Make the underline expand on hover */
-body.press-talks section.invited-talks a:hover::after,body.press-talks section.awards-recognition a:hover::after {
+/* body.press-talks section.invited-talks a:hover::after,body.press-talks section.awards-recognition a:hover::after {
   width: 100%;
-}
+} */
 /* Pagination styles */
 .pagination {
   display: flex;
@@ -92,7 +92,7 @@ body.press-talks section.invited-talks a:hover::after,body.press-talks section.a
 .press-coverage .press-title-link {
   display: block;
   color: var(--color-link);
-  text-decoration: none;
+  /* text-decoration: none; */
   margin-bottom: 5px;
 }
 

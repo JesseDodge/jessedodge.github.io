@@ -256,6 +256,13 @@ body.publications {
   transition: box-shadow 0.3s ease;
 }
 
+@media (min-width: 680px) {
+body:not(.home) .news-section,
+body:not(.home) .main-content {
+  padding: 1.5rem;
+}
+}
+
 .profile-section:hover,
 .main-content:hover,
 .news-section:hover {
