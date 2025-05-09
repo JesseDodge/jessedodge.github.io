@@ -1,4 +1,12 @@
-/* Modern styling with accent colors */
+@font-face {
+  font-family: 'katwijk-mono-regular-web'; /* Name of the font */
+  src: url('/public/fonts/katwijk-mono-regular-web.woff2') format('woff2'), /* Preferred format */
+       url('/public/fonts/katwijk-mono-regular-web.woff') format('woff');   /* Fallback format */
+  font-weight: normal; /* Optional: Specify weight */
+  font-style: normal;  /* Optional: Specify style */
+}
+
+
 :root {
   --color-background: #f5f3f4;
   --color-accent: #adb5bd;
@@ -21,7 +29,7 @@
 body {
   background-color: var(--color-white);
   color: var(--color-text);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  font-family: 'katwijk-mono-regular-web', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, sans-serif;
   line-height: 1.6;
   padding-top: 70px;
