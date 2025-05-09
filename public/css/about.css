@@ -1,6 +1,5 @@
 body.about .section a {
     color:var(--color-link);
-    text-decoration: none;
 }
 body.about .main-content {
   margin-bottom: 20px;
