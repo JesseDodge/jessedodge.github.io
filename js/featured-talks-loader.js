@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Create and populate the talk content
         talkElement.innerHTML = `
           <a href="${talkUrl}" target="_blank">
-            <div class="featured-image" style="background-image: url('${imageUrl}'); background-size: contain; background-position: center;"></div>
+            <div class="featured-image" style="background-image: url('${imageUrl}');"></div>
             <h4>${talkTitle}</h4>
           </a>
         `;
