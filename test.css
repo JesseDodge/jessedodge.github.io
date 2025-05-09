@@ -30,7 +30,7 @@
 
 body {
   background-color: var(--color-white);
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  font-family: 'Times New Roman', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen, Ubuntu, sans-serif;
   color: var(--color-text);
   line-height: 1.6;
@@ -41,7 +41,7 @@ body {
 body a {
   color: var(--color-link);
 }
-body.home {
+/* body.home {
   background-color: var(--color-white);
   color: var(--color-text);
   font-family: 'katwijk-mono-regular-web', -apple-system, BlinkMacSystemFont,
@@ -67,7 +67,7 @@ body.publications {
   line-height: 1.6;
   padding-top: 70px;
   font-weight: 400;
-}
+} */
 
 .container {
   width: 100%;
