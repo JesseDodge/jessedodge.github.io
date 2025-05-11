@@ -17,7 +17,7 @@
       href="./headshots/jesse_headshot_for_ai2.jpg"
       type="image/jpg"
     />
-    <link rel="stylesheet" href="./test.css" />
+    <link rel="stylesheet" href="./public/css/index.css" />
     <link rel="stylesheet" href="./public/css/press-and-talks.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -53,44 +53,7 @@
   <body class="press-talks">
     <site-header></site-header>
     <div class="container">
-      <aside class="profile-section">
-        <div class="profile-content">
-          <div class="profile-avatar">
-            <img
-              src="headshots/jesse_headshot_for_ai2.jpg"
-              alt="Jesse Dodge"
-              style="max-width: 100%"
-            />
-          </div>
-          <div class="profile-info">
-            <p>Jesse Dodge</p>
-            <p>Senior Research Scientist</p>
-            <p>Allen Institute for AI</p>
-            <p>PhD, Carnegie Mellon University</p>
-            <a href="mailto:jessed@allenai.org">jessed@allenai.org</a>
-          </div>
-          <div class="profile-links">
-            <a
-              target="_blank"
-              href="https://scholar.google.com/citations?hl=en&user=nHy_1doAAAAJ&view_op=list_works&sortby=pubdate"
-              class="profile-link"
-              ><i class="ai ai-google-scholar fa-2x"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://www.semanticscholar.org/author/Jesse-Dodge/34176020"
-              class="profile-link"
-              ><i class="ai ai-semantic-scholar fa-2x"></i
-            ></a>
-            <a
-              target="_blank"
-              href="https://www.twitter.com/JesseDodge"
-              class="profile-link"
-              ><i class="fab fa-twitter fa-2x"></i
-            ></a>
-          </div>
-        </div>
-      </aside>
+      <info-box></info-box>
       <div class="main-content">
         <section class="section intro">
           <h2 class="section-title">Press and Media Coverage</h2>
@@ -112,7 +75,9 @@
             etc.).
             <br />
             <br />
-            Please reach out to me at <a href="mailto:jessed@allenai.org">jessed@allenai.org</a> for press inquiries.
+            Please reach out to me at
+            <a href="mailto:jessed@allenai.org">jessed@allenai.org</a> for press
+            inquiries.
             <br />
           </p>
         </section>
@@ -173,6 +138,7 @@
     </script> -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
     <script src="js/components/site-header.js"></script>
+    <script src="js/components/info-box.js"></script>
     <script src="js/all-press-loader-no-pagination.js"></script>
     <script src="js/all-press-data.js"></script>
     <script src="js/all-awards-data.js"></script>
