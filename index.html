@@ -12,7 +12,7 @@
       type="image/jpg"
     />
     <link rel="stylesheet" href="./public/css/index.css" />
-        <link rel="stylesheet" href="./public/css/press-and-talks.css" />
+    <link rel="stylesheet" href="./public/css/press-and-talks.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,6 +28,22 @@
       href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css"
     />
   </head>
+
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-YHGZ208JFL"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-YHGZ208JFL');
+  </script>
+
   <body class="home">
     <site-header></site-header>
     <div class="container">
@@ -80,7 +96,7 @@
         </section>
       </main>
     </div>
-    <!-- <script>
+    <script>
       (function (i, s, o, g, r, a, m) {
         i['GoogleAnalyticsObject'] = r;
         (i[r] =
@@ -103,7 +119,7 @@
 
       ga('create', 'UA-44812867-1', 'cmu.edu');
       ga('send', 'pageview');
-    </script> -->
+    </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.1/jquery.min.js"></script>
     <script src="js/featured-talks-loader.js"></script>
