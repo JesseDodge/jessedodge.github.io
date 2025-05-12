@@ -8,7 +8,7 @@ class SiteHeader extends HTMLElement {
     </div>
 
     <div id="menuToggle" class="mobile-menu">
-      <input type="checkbox" />
+      <input type="checkbox" name="menuicon"/>
       <span></span>
       <span></span>
       <span></span>

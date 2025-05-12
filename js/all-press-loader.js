@@ -1,23 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const ITEMS_PER_PAGE = 9;
-  let currentPage = 1;
   const pressListContainer = document.getElementById('press-list');
-  const paginationContainer = document.getElementById('press-pagination');
 
   // Function to render a specific page of press items
-  function renderPage(page) {
-    // Clear the current content
-    pressListContainer.innerHTML = '';
-
-    // Calculate start and end indices for the current page
-    const startIndex = (page - 1) * ITEMS_PER_PAGE;
-    const endIndex = Math.min(startIndex + ITEMS_PER_PAGE, allPressData.length);
-
-    // Get the current page items
-    const currentItems = allPressData.slice(startIndex, endIndex);
-
-    // Create and append elements for each press item
-    currentItems.forEach((item) => {
+  function renderPage() {
+    allPressData.forEach((item) => {
       // Create press item container
       const pressItem = document.createElement('div');
       pressItem.className = 'press-item';
@@ -67,131 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  // Function to create pagination controls
-  function createPagination() {
-    // Clear existing pagination
-    paginationContainer.innerHTML = '';
-
-    // Calculate total pages
-    const totalPages = Math.ceil(allPressData.length / ITEMS_PER_PAGE);
-
-    if (totalPages <= 1) {
-      // No need for pagination if there's only one page
-      return;
-    }
-
-    // Create previous button
-    const prevBtn = document.createElement('button');
-    prevBtn.className = 'pagination-btn prev';
-    prevBtn.innerHTML = '&laquo;';
-    prevBtn.disabled = currentPage === 1;
-    prevBtn.addEventListener('click', () => {
-      if (currentPage > 1) {
-        currentPage--;
-        renderPage(currentPage);
-        updatePagination();
-      }
-    });
-    paginationContainer.appendChild(prevBtn);
-
-    // Determine which page buttons to show
-    const maxVisibleButtons = window.innerWidth < 768 ? 1 : 2;
-    let startPage = 1;
-    let endPage = totalPages;
-
-    if (totalPages > maxVisibleButtons) {
-      const halfButtons = Math.floor(maxVisibleButtons / 2);
-
-      if (currentPage <= halfButtons) {
-        // Near the beginning
-        endPage = maxVisibleButtons;
-      } else if (currentPage > totalPages - halfButtons) {
-        // Near the end
-        startPage = totalPages - maxVisibleButtons + 1;
-      } else {
-        // In the middle
-        startPage = currentPage - halfButtons;
-        endPage = currentPage + halfButtons;
-      }
-    }
-
-    // First page button if not in range
-    if (startPage > 1) {
-      const firstBtn = document.createElement('button');
-      firstBtn.className = 'pagination-btn';
-      firstBtn.textContent = '1';
-      firstBtn.addEventListener('click', () => {
-        currentPage = 1;
-        renderPage(currentPage);
-        updatePagination();
-      });
-      paginationContainer.appendChild(firstBtn);
-
-      if (startPage > 2) {
-        const ellipsis = document.createElement('span');
-        ellipsis.className = 'pagination-ellipsis';
-        ellipsis.textContent = '...';
-        paginationContainer.appendChild(ellipsis);
-      }
-    }
-
-    // Page number buttons
-    for (let i = startPage; i <= endPage; i++) {
-      const pageBtn = document.createElement('button');
-      pageBtn.className = 'pagination-btn';
-      if (i === currentPage) {
-        pageBtn.classList.add('active');
-      }
-      pageBtn.textContent = i;
-      pageBtn.addEventListener('click', () => {
-        currentPage = i;
-        renderPage(currentPage);
-        updatePagination();
-      });
-      paginationContainer.appendChild(pageBtn);
-    }
-
-    // Last page button if not in range
-    if (endPage < totalPages) {
-      if (endPage < totalPages - 1) {
-        const ellipsis = document.createElement('span');
-        ellipsis.className = 'pagination-ellipsis';
-        ellipsis.textContent = '...';
-        paginationContainer.appendChild(ellipsis);
-      }
-
-      const lastBtn = document.createElement('button');
-      lastBtn.className = 'pagination-btn';
-      lastBtn.textContent = totalPages;
-      lastBtn.addEventListener('click', () => {
-        currentPage = totalPages;
-        renderPage(currentPage);
-        updatePagination();
-      });
-      paginationContainer.appendChild(lastBtn);
-    }
-
-    // Next button
-    const nextBtn = document.createElement('button');
-    nextBtn.className = 'pagination-btn next';
-    nextBtn.innerHTML = '&raquo;';
-    nextBtn.disabled = currentPage === totalPages;
-    nextBtn.addEventListener('click', () => {
-      if (currentPage < totalPages) {
-        currentPage++;
-        renderPage(currentPage);
-        updatePagination();
-      }
-    });
-    paginationContainer.appendChild(nextBtn);
-  }
-
-  // Function to update pagination based on current page
-  function updatePagination() {
-    createPagination();
-  }
 
   // Initialize the display
-  renderPage(currentPage);
-  createPagination();
+  renderPage();
 });
