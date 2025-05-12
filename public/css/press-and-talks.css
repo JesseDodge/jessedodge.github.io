@@ -281,9 +281,8 @@ body.press-talks .press-list .press-item {
 }
   
   /* Make h4 elements in press items have consistent height on mobile */
-  .press-grid .press-item h4,
   .press-list .press-item h4 {
-    height: 20px;
+    height: 25px;
     overflow: hidden;
     display: -webkit-box;
     -webkit-box-orient: vertical;
