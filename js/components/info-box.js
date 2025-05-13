@@ -15,6 +15,7 @@ class InfoBox extends HTMLElement {
             <p>Allen Institute for AI</p>
             <p>PhD, Carnegie Mellon University</p>
             <a href="mailto:jessed@allenai.org">jessed@allenai.org</a>
+            <a href="mailto:dodgejesse@gmail.com">dodgejesse@gmail.com</a>
           </div>
           <div class="profile-links">
             <a
