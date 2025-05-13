@@ -11,7 +11,6 @@ class InfoBox extends HTMLElement {
             />
           </div>
           <div class="profile-info">
-            <p>Jesse Dodge</p>
             <p>Senior Research Scientist</p> 
             <p>Allen Institute for AI</p>
             <p>PhD, Carnegie Mellon University</p>
