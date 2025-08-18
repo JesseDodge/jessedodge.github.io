@@ -11,10 +11,9 @@ class InfoBox extends HTMLElement {
             />
           </div>
           <div class="profile-info">
-            <p>Senior Research Scientist</p> 
-            <p>Allen Institute for AI</p>
+            <p>Research Scientist</p> 
+            <p>Meta AI</p>
             <p>PhD, Carnegie Mellon University</p>
-            <a href="mailto:jessed@allenai.org">jessed@allenai.org</a>
             <a href="mailto:dodgejesse@gmail.com">dodgejesse@gmail.com</a>
           </div>
           <div class="profile-links">
